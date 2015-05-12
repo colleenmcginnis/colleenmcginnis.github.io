@@ -1,0 +1,44 @@
+
+        /* Style for button */
+        #myBtn
+        { 
+	width:150px;
+        }
+
+        /* Style for image */
+        #myImg
+        {
+            -webkit-transition: opacity 0.5s ease-in;
+            -moz-transition: opacity 0.5s ease-in;
+            -o-transition: opacity 0.5s ease-in;
+        }
+        #myImg.fade-out
+        {
+            opacity:0;
+        }
+        #myImg.fade-in
+        {
+            opacity:1;
+        }
+
+
+        #myImg2
+        {            
+            -webkit-transition: opacity 0.5s ease-in;
+            -moz-transition: opacity 0.5s ease-in;
+            -o-transition: opacity 0.5s ease-in;
+        }
+        #myImg2.fade-in
+        {
+            opacity:1;
+        }
+        #myImg2.fade-out
+        {
+            opacity:0;
+        }
+
+	p
+	{
+	color: #ffffff;
+	font-family: sans serif
+	}

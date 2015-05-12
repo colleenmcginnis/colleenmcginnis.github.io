@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* CSS Document */
+
+	
+.grayscale {
+
+  /* for Webkit browsere, Chrome 19+, Safari 6+ ... */
+  -webkit-filter: grayscale(1);
+
+  /* this is for Firefox 3.5+, Firefox mobile */
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'gs\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#gs");
+
+  /* for IE6+ */
+  filter: gray;
+}
+
+.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+.thumbnail.grayscale:hover {
+  outline-color: #777777;
+  border-color: #777777;
+}
+
+.thumbnail h5 {
+	padding-top: 10px;
+	padding-bottom: 0px;
+	text-align: center;
+  color: #000000;
+	}
+
+.thumbnail p {
+  font-size: 10px;
+  text-align: center;
+  padding-top:0px;
+}
+
+.pid p {
+  color: #6C8051;
+}
+
+.btn {
+  font-size: 10px;
+}
+
+.nav-pills a {
+  color:#000000;
+}
+
+#active a {
+  color:#000000;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3 {
+  text-align: center;
+  padding-right:20px;
+  padding-left:20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h4 {
+  text-align: center;
+  padding-right:20px;
+  padding-left:20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+button {
+  text-align: center;
+  background-color:#9f4936;
+  font-size: 30px;
+  font-family: 'Source Sans Pro',sans-serif;
+  box-shadow: 0px;
+  margin: 20px;
+  border-color: #9f4936;
+  padding:5px;
+  float: right;
+}
