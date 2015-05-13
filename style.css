@@ -19,32 +19,6 @@
   -webkit-filter: grayscale(0%);
 }
 
-a:hover, a:visited, a:link, a:active {
-    text-decoration: none;
-}
-
-.thumbnail.grayscale:hover {
-  outline-color: #777777;
-  border-color: #777777;
-}
-
-.thumbnail h5 {
-	padding-top: 10px;
-	padding-bottom: 0px;
-	text-align: center;
-  color: #000000;
-	}
-
-.thumbnail p {
-  font-size: 10px;
-  text-align: center;
-  padding-top:0px;
-}
-
-.pid p {
-  color: #6C8051;
-}
-
 .btn {
   font-size: 10px;
 }
@@ -66,6 +40,7 @@ h1 {
 h2 {
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.5vh;
 }
 
 h3 {
@@ -80,6 +55,7 @@ h4 {
   padding-right:20px;
   padding-left:20px;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.5vh;
 }
 
 button {
