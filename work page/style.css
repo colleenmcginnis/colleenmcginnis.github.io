@@ -79,8 +79,12 @@ a:hover, a:visited, a:link, a:active {
 
 
 .controls{
-  padding: 0%;
+  padding: 2% 2% 2% 0%;
   color: #ffffff;
+}
+
+.filter {
+  margin: 0% 2% 2% 0%
 }
 
 label{
@@ -162,11 +166,17 @@ button + label{
   .container .gap{
     width: 32%;
   }
+  .filter {
+    float: none;
+  }
 }
 
 @media all and (min-width: 640px){
   .container .mix,
   .container .gap{
     width: 100%;
+  }
+    .filter {
+    float: none;
   }
 }
