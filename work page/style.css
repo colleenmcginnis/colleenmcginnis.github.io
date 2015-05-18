@@ -35,14 +35,16 @@ a:hover, a:visited, a:link, a:active {
 
 .thumbnail {
   padding-top:5px;
-  padding-bottom:5px;
+  padding-bottom:0px;
+  margin-bottom:5px;
 }
 
 .thumbnail img {
   margin-left: auto;
   margin-right: auto;
-  width:100%;
+  width:96%;
   vertical-align: middle;
+  padding-top:2%;
 }
 
 .thumbnail h5 {
@@ -54,10 +56,10 @@ a:hover, a:visited, a:link, a:active {
 	}
 
 .thumbnail p {
-  font-size: 10px;
   text-align: center;
   padding-top:0px;
   padding-bottom:0px;
+  margin-bottom: 0px;
   font-size: 1.75vh;
 }
 
@@ -80,12 +82,12 @@ a:hover, a:visited, a:link, a:active {
 
 
 .controls{
-  padding: 2% 2% 2% 0%;
+  padding: 0% 2% 2% 0%;
   color: #ffffff;
 }
 
 .filter {
-  margin: 0% 2% 2% 0%
+  margin: 0% 1% 1% 0%
 }
 
 label{
@@ -133,7 +135,7 @@ button + label{
 }
 
 .container .mix{
-  margin-bottom: 2%;
+  margin-bottom: 30px;
   display: none;
 }
 
@@ -160,6 +162,11 @@ button + label{
   content: '';
   display: inline-block;
   padding-top: 0%;
+}
+
+
+#Container .mix{
+  display: none;
 }
 
 @media all and (min-width: 420px){
