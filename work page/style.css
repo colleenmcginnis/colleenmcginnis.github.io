@@ -17,6 +17,30 @@
 p {
   color: #000000;
   font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
+.thumbnail h5 {
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
+li {
+  font-family: 'Lato', sans-serif;
 }
 
 .grayscale:hover {
@@ -42,9 +66,11 @@ a:hover, a:visited, a:link, a:active {
 .thumbnail img {
   margin-left: auto;
   margin-right: auto;
+  height:96%;
   width:96%;
   vertical-align: middle;
   padding-top:2%;
+  overflow: hidden;
 }
 
 .thumbnail h5 {
