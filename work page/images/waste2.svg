@@ -2,30 +2,32 @@
 <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 960 450" enable-background="new 0 0 960 450" xml:space="preserve">
+	 viewBox="50 1075 900 350" enable-background="new 50 1075 900 350" xml:space="preserve">
 <g>
-	<circle fill="#7FA53F" cx="111.3" cy="269.8" r="28.5"/>
-	<circle fill="#228DBA" cx="110.9" cy="269.8" r="16.4"/>
-	<circle fill="#228DBA" cx="110.9" cy="343.9" r="28.5"/>
-	<circle fill="#7FA53F" cx="110.6" cy="343.9" r="16.4"/>
-	<circle fill="#228DBA" cx="110.8" cy="120" r="29"/>
-	<circle fill="#7FA53F" cx="110.4" cy="195.4" r="29"/>
-	<text transform="matrix(1 0 0 1 154.7412 129.1289)" font-family="'ChaparralPro-Italic'" font-size="33.708">waste generated</text>
-	<text transform="matrix(1 0 0 1 154.7412 203.0502)" font-family="'ChaparralPro-Italic'" font-size="33.708">waste disposed</text>
-	<text transform="matrix(1 0 0 1 154.7412 279.7812)" font-family="'ChaparralPro-Italic'" font-size="33.708">indicates net import</text>
-	<text transform="matrix(1 0 0 1 154.7412 353.7001)" font-family="'ChaparralPro-Italic'" font-size="33.708">indicates net export</text>
+	<circle fill="#7FA53F" cx="117.4" cy="1288.9" r="29.7"/>
+	<circle fill="#228DBA" cx="117" cy="1288.9" r="17.1"/>
+	<circle fill="#228DBA" cx="117" cy="1366.1" r="29.7"/>
+	<circle fill="#7FA53F" cx="116.7" cy="1366.1" r="17.1"/>
+	<circle fill="#228DBA" cx="116.9" cy="1132.9" r="30.2"/>
+	<circle fill="#7FA53F" cx="116.5" cy="1211.4" r="30.2"/>
+	<text transform="matrix(1 0 0 1 162.6468 1142.405)" font-family="'ChaparralPro-Italic'" font-size="35.1125">waste generated</text>
+	<text transform="matrix(1 0 0 1 162.6468 1219.4065)" font-family="'ChaparralPro-Italic'" font-size="35.1125">waste disposed</text>
+	<text transform="matrix(1 0 0 1 162.6468 1299.3342)" font-family="'ChaparralPro-Italic'" font-size="35.1125">indicates net import</text>
+	<text transform="matrix(1 0 0 1 162.6468 1376.3333)" font-family="'ChaparralPro-Italic'" font-size="35.1125">indicates net export</text>
 </g>
 <g>
-	<text transform="matrix(1 0 0 1 519.415 262.8461)" font-family="'ChaparralPro-Italic'" font-size="33.708">transportation of waste</text>
-	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="538" y1="225" x2="806" y2="225">
+	<text transform="matrix(1 0 0 1 542.515 1281.6936)" font-family="'ChaparralPro-Italic'" font-size="35.1125">transportation of waste</text>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="539.4" y1="2282.4199" x2="807.4" y2="2282.4199" gradientTransform="matrix(1.0417 0 0 -1.0417 3.051758e-05 3619.7915)">
 		<stop  offset="0" style="stop-color:#7FA53F"/>
 		<stop  offset="0.2497" style="stop-color:#679F5F"/>
 		<stop  offset="1" style="stop-color:#208DBA"/>
 	</linearGradient>
-	<line fill="none" stroke="url(#SVGID_1_)" stroke-width="16" stroke-miterlimit="10" x1="538" y1="225" x2="806" y2="225"/>
-	<text transform="matrix(1 0 0 1 494.8389 188.9428)" fill="#7FA53F" font-family="'ChaparralPro-Italic'" font-size="33.708">import</text>
-	<text transform="matrix(1 0 0 1 763.3809 188.9428)" fill="#228DBA" font-family="'ChaparralPro-Italic'" font-size="33.708">export</text>
-	<polygon fill="#7FA53F" points="539.7,210.9 539.7,210.9 532.7,197 546.6,197 	"/>
-	<polygon fill="#228DBA" points="806.1,210.9 806.1,210.9 799.1,197 813.1,197 	"/>
+	
+		<line fill="none" stroke="url(#SVGID_1_)" stroke-width="16" stroke-miterlimit="10" x1="561.9" y1="1242.3" x2="841" y2="1242.3"/>
+	<text transform="matrix(1 0 0 1 516.9154 1204.7112)" fill="#7FA53F" font-family="'ChaparralPro-Italic'" font-size="35.1125">import</text>
+	<text transform="matrix(1 0 0 1 796.6469 1204.7112)" fill="#228DBA" font-family="'ChaparralPro-Italic'" font-size="35.1125">export</text>
+	<polygon fill="#7FA53F" points="563.6,1227.6 563.6,1227.6 556.4,1213.1 570.8,1213.1 	"/>
+	<polygon fill="#228DBA" points="841.1,1227.6 841.1,1227.6 833.9,1213.1 848.4,1213.1 	"/>
 </g>
 </svg>
