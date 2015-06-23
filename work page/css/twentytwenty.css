@@ -81,8 +81,6 @@
   z-index: 0;
   overflow: hidden;
   position: relative;
-  margin-right: 10px;
-  margin-left: 10px;
   -webkit-user-select: none;
   -moz-user-select: none; }
   .twentytwenty-container img {
@@ -104,12 +102,20 @@
 .twentytwenty-before-label {
   opacity: 0; }
   .twentytwenty-before-label:before {
-    content: "Before"; }
+    content: "BEFORE"; 
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    }
 
 .twentytwenty-after-label {
   opacity: 0; }
   .twentytwenty-after-label:before {
-    content: "After"; }
+    content: "AFTER";
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter; 
+    font-size: 20px;
+    }
 
 .twentytwenty-horizontal .twentytwenty-before-label:before {
   left: 10px; }
