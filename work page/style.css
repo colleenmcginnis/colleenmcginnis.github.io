@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-	
+@media only screen and (min-width: 760px) {
 .grayscale {
 
   /* for Webkit browsere, Chrome 19+, Safari 6+ ... */
@@ -12,6 +12,7 @@
 
   /* for IE6+ */
   filter: gray;
+}
 }
 
 p {
