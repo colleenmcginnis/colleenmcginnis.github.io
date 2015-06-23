@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  {% include head.html %}
+
+<body>
+
+  <div class='container'>
+    <a href="../index.html"><img style="padding:10px" src="images/colleenmcginnis.png"/></a>
+    <ul class="nav nav-pills" style="float:right;padding-top:20px">
+      <li role="presentation" id="active"><a href="work.html">WORK</a></li>
+      <li role="presentation"><a href="{{ site.baseurl }}about/index.html">RESUME</a></li>
+    </ul>    
+  	<div class="page-header">
+  		<h1>{{ page.title }}</h1>
+        <h3>{{ page.subtitle }}</h3>
+        <p><font color="9F4936">{{ page.category }}</font></p>
+    </div>
+      
+    {{ content }}
+
+  </div>
+
+  <footer style="height:75px;width:90%">
+    <a href="#"><img class="img-reponsive" src="../images/contact.png" style="float:right"></a>
+  </footer>
+  {% include twentysomething.html %}
+</body>
+</html>
