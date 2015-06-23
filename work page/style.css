@@ -58,9 +58,11 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .thumbnail {
-  padding-top:5px;
-  padding-bottom:0px;
-  margin-bottom:5px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:10px;
+  padding-left:10px;
+  margin-bottom:30px;
 }
 
 .thumbnail img {
@@ -144,73 +146,4 @@ button + label{
   margin-left: 1em;
 }
 
-.container{
-  -webkit-backface-visibility: hidden;
-}
 
-.container:after{
-  content: '';
-  display: inline-block;
-  width: 100%;
-}
-
-.container .mix,
-.container .gap{
-  display: inline-block;
-  width: 49%;
-}
-
-.container .mix{
-  margin-bottom: 30px;
-  display: none;
-}
-
-.container .mix.category-1{
-}
-
-.container .mix.category-2{
-}
-
-.container .mix.category-3{
-}
-
-.container .mix:after{
-  content: attr(data-myorder);
-  color: white;
-  font-size: 16px;
-  display: inline-block;
-  vertical-align: top;
-  padding: 2%;
-  font-weight: 700;
-}
-
-.container .mix:before{
-  content: '';
-  display: inline-block;
-  padding-top: 0%;
-}
-
-
-#Container .mix{
-  display: none;
-}
-
-@media all and (min-width: 420px){
-  .container .mix,
-  .container .gap{
-    width: 32%;
-  }
-  .filter {
-    float: none;
-  }
-}
-
-@media all and (min-width: 640px){
-  .container .mix,
-  .container .gap{
-    width: 100%;
-  }
-    .filter {
-    float: none;
-  }
-}
