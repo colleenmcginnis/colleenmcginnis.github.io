@@ -16,7 +16,7 @@ author:
 pages_list:
   Work: 'work/index.html'
   Resume: 'about/index.html'
-category-list: [sustainable design, information design, environmental research] # can expand to include more categories as they are added
+category-list: [sustainable_design, information_design, environmental_research] # can expand to include more categories as they are added
 
 # Custom vars
 version:          1.0.0
