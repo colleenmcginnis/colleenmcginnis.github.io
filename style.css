@@ -72,12 +72,15 @@ button {
 
 .information-design {
   color: rgb(163, 147, 88);
+  text-transform: uppercase;
 }
 
 .sustainable-design {
-  color: rgb(159, 73, 54)
+  color: rgb(159, 73, 54);
+  text-transform: uppercase;
 }
 
 .environmental-research {
   color: rgb(108, 128, 81);
+  text-transform: uppercase;
 }
