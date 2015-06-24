@@ -14,7 +14,15 @@
   	<div class="page-header">
   		<h1>{{ page.title }}</h1>
         <h3>{{ page.subtitle }}</h3>
-        <p><font color="9F4936">{{ page.category }}</font></p>
+        
+        {% if page.category == 'sustainable design' %}
+          <p class="sustainable-design">{{ page.category }}</p>
+        {% elsif page.category == 'information design' %}
+          <p class="information-design">{{ page.category }}</p>
+        {% elsif page.category == 'environmental research' %}
+          <p class="environmental-research">{{ page.category }}</p>
+        {% endif %}
+        
     </div>
       
     {{ content }}
