@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  {% include head.html %}
+
+<body>
+
+  <div class='container'>
+    <a href="../index.html"><img style="padding:10px" src="images/colleenmcginnis.png"/></a>
+    <ul class="nav nav-pills" style="float:right;padding-top:20px">
+      <li role="presentation" id="active"><a href="index.html">WORK</a></li>
+      <li role="presentation"><a href="../resume/index.html">RESUME</a></li>
+    </ul>    
+  	<div class="page-header">
+  		<h1>{{ page.title }}</h1>
+        <h3>{{ page.subtitle }}</h3>
+        
+        {% if page.category == 'sustainable design' %}
+          <p class="sustainable-design">{{ page.category }}</p>
+        {% elsif page.category == 'information design' %}
+          <p class="information-design">{{ page.category }}</p>
+        {% elsif page.category == 'environmental research' %}
+          <p class="environmental-research">{{ page.category }}</p>
+        {% endif %}
+        
+    </div>
+      
+    {{ content }}
+
+  </div>
+
+  <footer style="height:75px;width:90%">
+    <a href="mailto:colleenjmcginnis@gmail.com"><img class="img-reponsive" src="../images/contact.png" style="float:right"></a>
+  </footer>
+  {% include twentysomething.html %}
+</body>
+</html>

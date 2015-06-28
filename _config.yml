@@ -1,0 +1,31 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      pygments
+kramdown:
+  input:          GFM
+
+# Permalinks
+permalink:        /posts/:title
+
+# Setup
+title:            Colleen McGinnis
+url:              colleenmcginnis.github.io
+baseurl:          /
+author:
+  name:           Colleen McGinnis
+pages_list:
+  Work: 'work/index.html'
+  Resume: 'about/index.html'
+category-list: [sustainable_design, information_design, environmental_research] # can expand to include more categories as they are added
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/colleenmcginnis/colleenmcginnis.github.io
+name: 			  	colleenmcginnis.github.io
+
+# Plugins
+
+
+
+exclude: [vendor]
