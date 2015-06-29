@@ -162,3 +162,11 @@ button + label{
   color: rgb(108, 128, 81);
   text-transform: uppercase;
 }
+
+.fa {
+  color:#000000;
+}
+
+.glyphicon {
+  color:#000000;
+}
