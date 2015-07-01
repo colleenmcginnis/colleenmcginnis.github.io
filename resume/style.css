@@ -66,3 +66,15 @@ p {
   padding:0px;
   margin: 0px;
 }
+
+.fa {
+  color:#8a8a8a;
+}
+
+.fa:hover {
+  color:#000000;
+}
+
+.glyphicon {
+  color:#000000;
+}
