@@ -63,8 +63,69 @@ a:hover, a:visited, a:link, a:active {
 }
 
 p {
-  padding:0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+  padding-right:20px;
+  padding-left:20px;
+  font-family: 'Lato', sans-serif;
+}
+
+h2 {
+  padding-right:20px;
+  padding-left:20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5vh;
+}
+
+h3 {
+  padding-right:20px;
+  padding-left:20px;
+  font-family: 'Lato', sans-serif;
+}
+
+h4 {
+  padding-right:20px;
+  padding-left:20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5vh;
+}
+
+button {
+  text-align: center;
+  background-color:#ffffff;
+  font-size: 15px;
+  color:#8a8a8a;
+  font-family: 'Lato',sans-serif;
   margin: 0px;
+  border-color: #8a8a8a;
+  border-width: 4px;
+  box-shadow: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius:2px;
+  border-style: solid;
+}
+
+button:hover {
+  color:#000000;
+  border-color: #000000;
+
+}
+
+button:active {
+  color:#262626;
+  border-color: #262626;
+  border
+
+}
+
+button:focus {
+  outline:0;
 }
 
 .fa {
