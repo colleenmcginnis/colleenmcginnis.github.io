@@ -16,6 +16,16 @@
 }
 }
 
+body { padding-top: 70px; }
+
+.navbar-fixed-top {
+  box-shadow: none;
+  border-color: #ffffff;
+  background: #ffffff;
+  opacity: 0.95;
+  height:80px;
+}
+
 p {
   color: #000000;
   font-size: 16px;
