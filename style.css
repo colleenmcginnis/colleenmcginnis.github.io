@@ -14,6 +14,16 @@
   filter: gray;
 }
 
+body { padding-top: 70px; }
+
+.navbar-fixed-top {
+  box-shadow: none;
+  border-color: #ffffff;
+  background: #ffffff;
+  opacity: 0.95;
+  height:80px;
+}
+
 .grayscale:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
@@ -32,15 +42,6 @@
   font-weight: bold;
 }
 
-body { padding-top: 70px; }
-
-.navbar-fixed-top {
-  box-shadow: none;
-  border-color: #ffffff;
-  background: #ffffff;
-  opacity: 0.95;
-  height:80px;
-}
 
 p {
     font-family: 'Lato', sans-serif;

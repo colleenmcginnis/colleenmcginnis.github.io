@@ -21,8 +21,9 @@ body { padding-top: 70px; }
 .navbar-fixed-top {
   box-shadow: none;
   border-color: #ffffff;
+  border-width: 1px;
   background: #ffffff;
-  opacity: 0.95;
+  opacity: .98;
   height:80px;
 }
 
