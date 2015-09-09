@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* CSS Document */
+
+	
+.grayscale {
+
+  /* for Webkit browsere, Chrome 19+, Safari 6+ ... */
+  -webkit-filter: grayscale(1);
+
+  /* this is for Firefox 3.5+, Firefox mobile */
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'gs\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#gs");
+
+  /* for IE6+ */
+  filter: gray;
+}
+
+body { padding-top: 70px; }
+
+.navbar-fixed-top {
+  box-shadow: none;
+  border-color: #ffffff;
+  background: #ffffff;
+  opacity: 0.95;
+  height:80px;
+}
+
+.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+.btn {
+  font-size: 10px;
+}
+
+.nav-pills a {
+  color:#000000;
+}
+
+#active a {
+  color:#000000;
+  font-weight: bold;
+}
+
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+  padding-right:20px;
+  padding-left:20px;
+  font-family: 'Lato', sans-serif;
+}
+
+h2 {
+  padding-right:20px;
+  padding-left:20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5vh;
+}
+
+h3 {
+  padding-right:20px;
+  padding-left:20px;
+  font-family: 'Lato', sans-serif;
+}
+
+h4 {
+  padding-right:20px;
+  padding-left:20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5vh;
+}
+
+button {
+  text-align: center;
+  background-color:#ffffff;
+  font-size: 30px;
+  color:#8a8a8a;
+  font-family: 'Lato',sans-serif;
+  margin: 0px;
+  border-color: #8a8a8a;
+  border-width: 4px;
+  box-shadow: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius:3px;
+  border-style: solid;
+}
+
+button:hover {
+  color:#000000;
+  border-color: #000000;
+
+}
+
+button:active {
+  color:#262626;
+  border-color: #262626;
+  border
+
+}
+
+button:focus {
+  outline:0;
+}
+
+.button {
+text-align:center;
+margin:auto;
+}
+
+.information-design {
+  color: rgb(163, 147, 88);
+  text-transform: uppercase;
+}
+
+.sustainable-design {
+  color: rgb(159, 73, 54);
+  text-transform: uppercase;
+}
+
+.environmental-research {
+  color: rgb(108, 128, 81);
+  text-transform: uppercase;
+}
+
+.fa {
+  color:#8a8a8a;
+}
+
+.fa:hover {
+  color:#000000;
+}
+
+.glyphicon {
+  color:#000000;
+}

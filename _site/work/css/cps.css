@@ -1,0 +1,10 @@
+.twenty-twenty-container {
+	
+}
+
+.twenty-twenty-container img {
+max-width: 100%;
+  position: absolute;
+  top: 0;
+  display: block;
+}

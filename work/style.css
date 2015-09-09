@@ -33,6 +33,10 @@ p {
   font-family: 'Lato', sans-serif;
 }
 
+.col-md-4 p {
+  padding-top:10px
+}
+
 h1 {
     font-family: 'Lato', sans-serif;
 }
@@ -184,4 +188,8 @@ button + label{
 
 .glyphicon {
   color:#000000;
+}
+
+.img-responsive {
+  margin: 10px 0;
 }
