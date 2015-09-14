@@ -1,3 +1,9 @@
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
 @charset "UTF-8";
 /* CSS Document */
 
@@ -260,7 +266,19 @@ button:focus {
   box-shadow: inset 0px 0px 175px 19px rgba(0,0,0,0.75);
 }
 
-.p4p-web-version a {
+.storywood-link {
+  background-image: url("images/storywood_link.png");
+  background-repeat: no-repeat;
+  background-width: 100%;
+  background-height: auto;
+  background-position: center;
+  border: 0px solid #000;
+  -webkit-box-shadow: inset 0px 0px 175px 19px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 175px 19px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 175px 19px rgba(0,0,0,0.75);
+}
+
+.p4p-web-version a, .storywood-link a {
   display: inline-block;
   text-align: center;
   border: 0px solid #fff;
@@ -277,17 +295,17 @@ button:focus {
   box-shadow: inset 0px 0px 175px 19px rgba(0,0,0,0.8);
 }
 
-.p4p-web-version a:hover {
+.p4p-web-version a:hover, .storywood-link a:hover {
   -webkit-box-shadow: inset 0px 0px 175px 19px rgba(0,0,0,0.9);
   -moz-box-shadow: inset 0px 0px 175px 19px rgba(0,0,0,0.9);
   box-shadow: inset 0px 0px 175px 19px rgba(0,0,0,0.9);
 }
 
-.p4p-web-version i {
+.p4p-web-version i, .storywood-link i {
   color: #fff;
 }
 
-.p4p-web-version.grayscale {
+.p4p-web-version.grayscale, .storywood-link.grayscale, .cover.grayscale {
   /* for Webkit browsere, Chrome 19+, Safari 6+ ... */
   -webkit-filter: grayscale(.6);
   /* this is for Firefox 3.5+, Firefox mobile */
@@ -334,3 +352,26 @@ footer {
 svg {
   width:100%;
 }
+
+video {
+  max-width: 100%;
+}
+
+.storywoodCaption {
+  background-color: #fff;
+  height: 40vh;
+  margin:-7% 5% 0 5%;
+}
+
+.reuse h3 {
+  color:#80A638;
+}
+
+.recycling h3 {
+  color:#228DBA;
+}
+
+.commercial h3 {
+  color: #EBBA34;
+}
+
