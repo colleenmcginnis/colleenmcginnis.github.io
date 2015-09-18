@@ -4706,42 +4706,42 @@ category: information design
 	</g>
 
 </svg>
+<div class="storywoodCaption">
+	<div class="reuse" id="buildingReuseText">
+		<h3>Building Reuse</h3>
+		<p>In many cases, the greenest building is the one that is already built. Building reuse involves using existing structural components in a building to reduce or eliminate the need for both disposing of existing materials and bringing new materials to the site.</p>
+	</div>
 
-<div class="storywoodCaption reuse" id="buildingReuseText">
-	<h3>Building Reuse</h3>
-	<p>In many cases, the greenest building is the one that is already built. Building reuse involves using existing structural components in a building to reduce or eliminate the need for both disposing of existing materials and bringing new materials to the site.</p>
+	<div class="commercial" id="conventionalWoodText">
+		<h3>Conventional Wood</h3>
+		<p>The vast majority of the wood used in the U.S. is commercial. Commercial wood products result from timber logged by the traditional forest products industry and are commonly harvested from both natural forests and silvicultural lands. These products are typically produced on a larger, more efficient scale, and often (but not always) have a more challenging time in providing detailed and transparent chain-of-custody information, unless they are part of a certification system.</p>
+	</div>
+
+	<div class="commercial" id="certifiedWoodText">
+		<h3>Certified Wood</h3>
+		<p>Certified wood comes from forests that are managed responsibly as designated by specific standards established by a certification program. Forest management certifications include, but are not limited to, the Sustainable Forestry Initiative (SFI) and the Forest Stewardship Council (FSC). Certification programs ensure that environmentally-sustainable practices are being implemented.</p>
+	</div>
+
+	<div class="recycling" id="phytoremediationText">
+		<h3>Phytoremediation</h3>
+		<p>Phytoremediation - the planting of trees in contaminated soils to remove pollutants from the environment or render them harmless – has a dual purpose of integrating environmental improvement with community economic development. Tree farms result in both improved soil and water quality on-site and new economic opportunities. Hybrid poplar trees are often the tree of choice and serve as an excellent source of raw material that can be used for furniture, cabinets, doors, and paneling.</p>
+	</div>
+
+	<div class="recycling" id="urbanWoodText">
+		<h3>Urban Wood</h3>
+		<p>Urban trees, unlike silvicultural trees, are not grown for their harvest value; instead, they are grown for their living value. These trees were planted and maintained to provide beauty, social benefits, and measurable ecosystem services, including improved air and water quality, public health, and more. Examples may include a homebuilder using a lot tree for the flooring in a new home, a community heritage tree becoming millwork for the city hall, or campus trees used to produce furniture sold to graduates of the institution.</p>
+	</div>
+
+	<div class="recycling" id="recycledContentText">
+		<h3>Recycled Content</h3>
+		<p>Recycled content wood includes reclaimed post-consumer, post-industrial, and pre-consumer recycled wood. Post-consumer recycled wood is wood that has previously been sawn into lumber and used in the construction of buildings, bridges, or other structures or uses, such as furniture. It has been removed in a demolition project and instead of going to the landfills, its lifecycle has been extended by recycling it and preparing it to be used again. Post-industrial recycled wood comes from industrial uses, such as pallets. Pre-consumer recycled wood often represents sawn mill rejects.</p>
+	</div>
+
+	<div class="reuse" id="materialReuseText">
+		<h3>Material Reuse</h3>
+		<p>Some of the richest stories come from allowing existing materials to take on a new life through material reuse.</p>
+	</div>
 </div>
-
-<div class="storywoodCaption commercial" id="conventionalWoodText">
-	<h3>Conventional Wood</h3>
-	<p>The vast majority of the wood used in the U.S. is commercial. Commercial wood products result from timber logged by the traditional forest products industry and are commonly harvested from both natural forests and silvicultural lands. These products are typically produced on a larger, more efficient scale, and often (but not always) have a more challenging time in providing detailed and transparent chain-of-custody information, unless they are part of a certification system.</p>
-</div>
-
-<div class="storywoodCaption commercial" id="certifiedWoodText">
-	<h3>Certified Wood</h3>
-	<p>Certified wood comes from forests that are managed responsibly as designated by specific standards established by a certification program. Forest management certifications include, but are not limited to, the Sustainable Forestry Initiative (SFI) and the Forest Stewardship Council (FSC). Certification programs ensure that environmentally-sustainable practices are being implemented.</p>
-</div>
-
-<div class="storywoodCaption recycling" id="phytoremediationText">
-	<h3>Phytoremediation</h3>
-	<p>Phytoremediation - the planting of trees in contaminated soils to remove pollutants from the environment or render them harmless – has a dual purpose of integrating environmental improvement with community economic development. Tree farms result in both improved soil and water quality on-site and new economic opportunities. Hybrid poplar trees are often the tree of choice and serve as an excellent source of raw material that can be used for furniture, cabinets, doors, and paneling.</p>
-</div>
-
-<div class="storywoodCaption recycling" id="urbanWoodText">
-	<h3>Urban Wood</h3>
-	<p>Urban trees, unlike silvicultural trees, are not grown for their harvest value; instead, they are grown for their living value. These trees were planted and maintained to provide beauty, social benefits, and measurable ecosystem services, including improved air and water quality, public health, and more. Examples may include a homebuilder using a lot tree for the flooring in a new home, a community heritage tree becoming millwork for the city hall, or campus trees used to produce furniture sold to graduates of the institution.</p>
-</div>
-
-<div class="storywoodCaption recycling" id="recycledContentText">
-	<h3>Recycled Content</h3>
-	<p>Recycled content wood includes reclaimed post-consumer, post-industrial, and pre-consumer recycled wood. Post-consumer recycled wood is wood that has previously been sawn into lumber and used in the construction of buildings, bridges, or other structures or uses, such as furniture. It has been removed in a demolition project and instead of going to the landfills, its lifecycle has been extended by recycling it and preparing it to be used again. Post-industrial recycled wood comes from industrial uses, such as pallets. Pre-consumer recycled wood often represents sawn mill rejects.</p>
-</div>
-
-<div class="storywoodCaption reuse" id="materialReuseText">
-	<h3>Material Reuse</h3>
-	<p>Some of the richest stories come from allowing existing materials to take on a new life through material reuse.</p>
-</div>
-
 
 <div class="row">
 	<div class="col-md-8">
@@ -4760,121 +4760,4 @@ category: information design
 
     <hr>
 <script src="../js/jquery-1.11.3.min.js"></script>
-
-<script>
-
-	$(".buildingReuse").click(function() {
-	$("#materialReuseText").hide();
-	$(".materialReuse").css({'opacity':'0'});
-	$("#recycledContentText").hide();
-	$(".recycledContent").css({'opacity':'0'});
-	$("#urbanWoodText").hide();
-	$(".urbanWood").css({'opacity':'0'});
-	$("#phytoremediationText").hide();
-	$(".phytoremediation").css({'opacity':'0'});
-	$("#certifiedWoodText").hide();
-	$(".certifiedWood").css({'opacity':'0'});
-	$("#conventionalWoodText").hide();
-	$(".conventionalWood").css({'opacity':'0'})
-	$(".buildingReuse").css({'opacity':'1'});
-	$("#buildingReuseText").fadeIn();
-	});
-	$(".materialReuse").click(function() {
-	$("#buildingReuseText").hide();
-	$(".buildingReuse").css({'opacity':'0'});
-	$("#recycledContentText").hide();
-	$(".recycledContent").css({'opacity':'0'});
-	$("#urbanWoodText").hide();
-	$(".urbanWood").css({'opacity':'0'});
-	$("#phytoremediationText").hide();
-	$(".phytoremediation").css({'opacity':'0'});
-	$("#certifiedWoodText").hide();
-	$(".certifiedWood").css({'opacity':'0'});
-	$("#conventionalWoodText").hide();
-	$(".conventionalWood").css({'opacity':'0'})
-	$(".materialReuse").css({'opacity':'1'});
-	$("#materialReuseText").fadeIn();
-	});
-	$(".recycledContent").click(function() {
-	$("#buildingReuseText").hide();
-	$(".buildingReuse").css({'opacity':'0'});
-	$("#materialReuseText").hide();
-	$(".materialReuse").css({'opacity':'0'});
-	$("#urbanWoodText").hide();
-	$(".urbanWood").css({'opacity':'0'});
-	$("#phytoremediationText").hide();
-	$(".phytoremediation").css({'opacity':'0'});
-	$("#certifiedWoodText").hide();
-	$(".certifiedWood").css({'opacity':'0'});
-	$("#conventionalWoodText").hide();
-	$(".conventionalWood").css({'opacity':'0'});
-	$(".recycledContent").css({'opacity':'1'});
-	$("#recycledContentText").fadeIn();
-	});
-	$(".urbanWood").click(function() {
-	$("#buildingReuseText").hide();
-	$(".buildingReuse").css({'opacity':'0'});
-	$("#materialReuseText").hide();
-	$(".materialReuse").css({'opacity':'0'});
-	$("#recycledContentText").hide();
-	$(".recycledContent").css({'opacity':'0'});
-	$("#phytoremediationText").hide();
-	$(".phytoremediation").css({'opacity':'0'});
-	$("#certifiedWoodText").hide();
-	$(".certifiedWood").css({'opacity':'0'});
-	$("#conventionalWoodText").hide();
-	$(".conventionalWood").css({'opacity':'0'});
-	$(".urbanWood").css({'opacity':'1'});
-	$("#urbanWoodText").fadeIn();
-	});
-	$(".phytoremediation").click(function() {
-	$("#buildingReuseText").hide();
-	$(".buildingReuse").css({'opacity':'0'});
-	$("#materialReuseText").hide();
-	$(".materialReuse").css({'opacity':'0'});
-	$("#recycledContentText").hide();
-	$(".recycledContent").css({'opacity':'0'});
-	$("#urbanWoodText").hide();
-	$(".urbanWood").css({'opacity':'0'});
-	$("#certifiedWoodText").hide();
-	$(".certifiedWood").css({'opacity':'0'});
-	$("#conventionalWoodText").hide();
-	$(".conventionalWood").css({'opacity':'0'});
-	$(".phytoremediation").css({'opacity':'1'});
-	$("#phytoremediationText").fadeIn();
-	});
-	$(".certifiedWood").click(function() {
-	$("#buildingReuseText").hide();
-	$(".buildingReuse").css({'opacity':'0'});
-	$("#materialReuseText").hide();
-	$(".materialReuse").css({'opacity':'0'});
-	$("#recycledContentText").hide();
-	$(".recycledContent").css({'opacity':'0'});
-	$("#urbanWoodText").hide();
-	$(".urbanWood").css({'opacity':'0'});
-	$("#phytoremediationText").hide();
-	$(".phytoremediation").css({'opacity':'0'});
-	$("#conventionalWoodText").hide();
-	$(".conventionalWood").css({'opacity':'0'});
-	$(".certifiedWood").css({'opacity':'1'});
-	$("#certifiedWoodText").fadeIn();
-	});
-	$(".conventionalWood").click(function() {
-	$("#buildingReuseText").hide();
-	$(".buildingReuse").css({'opacity':'0'});
-	$("#materialReuseText").hide();
-	$(".materialReuse").css({'opacity':'0'});
-	$("#recycledContentText").hide();
-	$(".recycledContent").css({'opacity':'0'});
-	$("#urbanWoodText").hide();
-	$(".urbanWood").css({'opacity':'0'});
-	$("#phytoremediationText").hide();
-	$(".phytoremediation").css({'opacity':'0'});
-	$("#certifiedWoodText").hide();
-	$(".certifiedWood").css({'opacity':'0'});
-	$(".conventionalWood").css({'opacity':'1'});
-	$("#conventionalWoodText").fadeIn();
-	});
-
-
-</script>
+<script src="js/storywood.js"></script>

@@ -375,3 +375,43 @@ video {
   color: #EBBA34;
 }
 
+#landUse {
+  display: none;
+}
+
+#reuseSites {
+  display: none;
+}
+
+#communityAssets {
+  display: none;
+}
+
+.lv-map {
+  margin: 1em 0 1em 0;
+}
+
+.lv-map-form > svg {
+  display: inline;
+}
+
+.lv-map-form img {
+  height: 20px;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.lv-map-form h3 {
+  margin-top: 30px;
+  padding-bottom: 0;
+}
+
+.lv-map-form p {
+  padding: 0;
+  margin: 3px;
+}
+
+#landKey, #assetKey, #sitesKey {
+  display: none;
+}
+
