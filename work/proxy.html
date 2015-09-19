@@ -4,8 +4,7 @@ title: Public Interest Design Case Study
 subtitle: University of Texas School of Architecture, 2012
 category: sustainable design
 ---
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
 
     <img src="images/proxy1.png" class="img-responsive" alt="proxy photo of mural">
 
@@ -77,46 +76,14 @@ category: sustainable design
 
 </div>
 
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiY21jZyIsImEiOiJlZTA1Mjg5MThhNzAwYjIwMzkzOTRhZmI0YzdhM2ZhNyJ9.qmfiogrh1Wu7_JlfoaSMKw';
+    var proxyMap = L.mapbox.map('proxyMap', 'mapbox.streets', {
+        center: [37.776238, -122.424433],
+        zoom: 19
+    });
 
-    <script type="text/javascript">
-        var mapTiles = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '<a href="http://www.openstreetmap.org/copyright">&copy; OpenStreetMap</a>',
-            maxZoom: 20,
-        });
+    L.marker([37.776238, -122.424433]).bindLabel('proxy').addTo(proxyMap);
 
-
-        var proxy = {
-            "type": "Feature",
-            "properties": {
-                "name": "proxy",
-                "popupContent": "432 Octavia St, San Francisco, CA 94102"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [37.776238, -122.424433]
-            }
-        };
-
-        function onEachFeature(feature, layer) {
-            // does this feature have a property named popupContent?
-            if (feature.properties && feature.properties.popupContent) {
-                layer.bindPopup(feature.properties.popupContent);
-            }
-        }
-
-
-        var proxyMap = L.map('proxyMap', {
-            center: [37.776238, -122.424433],
-            zoom: 18,
-            zoomAnimationThreshold: 5,
-            zoomControl: false
-        });
-
-
-        mapTiles.addTo(proxyMap);
-        L.geoJson(proxy, { 
-            onEachFeature: onEachFeature 
-        }).addTo(proxyMap);
-
-    </script>
-
+</script>
+ 

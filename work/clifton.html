@@ -5,8 +5,6 @@ subtitle: Miami University, 2009
 category: sustainable design
 ---
 
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 
 <img src="images/clifton1.jpg" class="img-responsive" alt="Responsive image" style="padding-bottom:20px">
 
@@ -50,45 +48,53 @@ category: sustainable design
 </div>
 
 <hr>
-    
-    <script type="text/javascript">
-        var mapTiles = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '<a href="http://www.openstreetmap.org/copyright">&copy; OpenStreetMap</a>',
-            maxZoom: 20,
-        });
 
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiY21jZyIsImEiOiJlZTA1Mjg5MThhNzAwYjIwMzkzOTRhZmI0YzdhM2ZhNyJ9.qmfiogrh1Wu7_JlfoaSMKw';
+var cliftonMap = L.mapbox.map('cliftonMap', 'mapbox.streets')
+    .setView([39.143583, -84.521340], 19);
 
-        var proxy = {
-            "type": "Feature",
-            "properties": {
-                "name": "Clifton Branch Library",
-                "popupContent": "351 Ludlow Ave, Cincinnati, OH 45220"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [39.143583, -84.521340]
-            }
-        };
+L.mapbox.featureLayer({
+    // this feature is in the GeoJSON format: see geojson.org
+    // for the full specification
+    type: 'Feature',
+    geometry: {
+        type: 'Point',
+        // coordinates here are in longitude, latitude order because
+        // x, y is the standard for GeoJSON and many formats
+        coordinates: [
+          39.143583,
+          -84.521340 
+        ]
+    },
+    properties: {
+        title: 'Peregrine Espresso',
+        description: '1718 14th St NW, Washington, DC',
+        // one can customize markers by adding simplestyle properties
+        // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+        'marker-size': 'large',
+        'marker-color': '#BE9A6B',
+        'marker-symbol': 'cafe'
+    }
+}).addTo(cliftonMap);
+</script>
 
-        function onEachFeature(feature, layer) {
-            // does this feature have a property named popupContent?
-            if (feature.properties && feature.properties.popupContent) {
-                layer.bindPopup(feature.properties.popupContent);
-            }
-        }
+<!-- <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-osm/v0.1.0/leaflet-osm.js'></script>
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiY21jZyIsImEiOiJlZTA1Mjg5MThhNzAwYjIwMzkzOTRhZmI0YzdhM2ZhNyJ9.qmfiogrh1Wu7_JlfoaSMKw';
+    var cliftonMap = L.mapbox.map('cliftonMap', 'mapbox.streets', {
+        center: [39.143583, -84.521340],
+        zoom: 19
+    });
 
+    var marker = L.marker([39.143583, -84.521340], {
+    icon: L.mapbox.marker.icon({
+      'marker-color': '#f86767'
+    })
+    });
 
-        var cliftonMap = L.map('cliftonMap', {
-            center: [39.143583, -84.521340],
-            zoom: 18,
-            zoomAnimationThreshold: 5,
-            zoomControl: false
-        });
+    // L.marker([39.143583, -84.521340]).bindLabel('clifton branch library').addTo(cliftonMap);
 
-
-        mapTiles.addTo(cliftonMap);
-        L.geoJson(proxy, { 
-            onEachFeature: onEachFeature 
-        }).addTo(cliftonMap);
-
-    </script>
+</script>
+     -->

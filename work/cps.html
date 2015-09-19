@@ -68,47 +68,13 @@ category: sustainable design
   
   <hr>
 
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiY21jZyIsImEiOiJlZTA1Mjg5MThhNzAwYjIwMzkzOTRhZmI0YzdhM2ZhNyJ9.qmfiogrh1Wu7_JlfoaSMKw';
+    var cpsMap = L.mapbox.map('cpsMap', 'mapbox.streets', {
+        center: [42.003584, -87.668719],
+        zoom: 17
+    });
 
-    <script type="text/javascript">
-        var mapTiles = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '<a href="http://www.openstreetmap.org/copyright">&copy; OpenStreetMap</a>',
-            maxZoom: 20,
-        });
-
-
-        var cpsMap = {
-            "type": "Feature",
-            "properties": {
-                "name": "proxy",
-                "popupContent": "432 Octavia St, San Francisco, CA 94102"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [37.776238, -122.424433]
-            }
-        };
-
-        function onEachFeature(feature, layer) {
-            // does this feature have a property named popupContent?
-            if (feature.properties && feature.properties.popupContent) {
-                layer.bindPopup(feature.properties.popupContent);
-            }
-        }
-
-
-        var cpsMap = L.map('cpsMap', {
-            center: [37.776238, -122.424433],
-            zoom: 18,
-            zoomAnimationThreshold: 5,
-            zoomControl: false
-        });
-
-
-        mapTiles.addTo(cpsMap);
-        L.geoJson(cps, { 
-            onEachFeature: onEachFeature 
-        }).addTo(cpsMap);
-
-    </script>
+</script>
 
 

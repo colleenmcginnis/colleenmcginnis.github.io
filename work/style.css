@@ -333,13 +333,13 @@ footer {
     box-shadow: none;
 }
 
-.leaflet-container .leaflet-control-attribution {
+/*.leaflet-container .leaflet-control-attribution {
     background-color: transparent;
 
 }
 
 .leaflet-control-attribution a {
-    /*visibility: hidden;*/
+    visibility: hidden;
     font-size: 1em !important;
     color: #444 !important; 
     font-weight: normal !important;
@@ -347,7 +347,7 @@ footer {
 
 .leaflet-popup-content {
     color: #444;
-}
+}*/
 
 svg {
   width:100%;
@@ -417,8 +417,40 @@ video {
   display: none;
 }
 
-.twentytwenty-container {
-  margin: 2em 0;
+/*Impact interaction
+===========================================*/
+
+#walkToSov, #bikeToSov, #transitToSov, 
+#paperToWaste, #beverageToWaste, #mixedToWaste, #ewasteToWaste,
+#electricitySavedToKwh, #renewableToKwh, #waterToKwh, #wasteToKwh, 
+#wasteToGas, #sovToGas, 
+#waterToWater, #electricitySavedToWater,
+#wasteToTrees,  
+#sovToGhg, #wasteToGhg, #kwhToGhg,#carbonCreditsToGhg, #waterToGhg {
+  opacity: .3;
+}
+
+#walkMiles, #bikeMiles, #transitMiles,
+#paperRecyclables, #beverageContainers, #mixedRecyclables, #ewasteRecyclables,
+#savedElectricity, #renewableEnergyCredits, #carbonCredits,
+#waterConsumed,
+#sovMilesTotal,
+#wasteTotal,
+#gasTotal,
+#treesTotal,
+#kwhTotal, 
+#waterTotal,
+#ghgTotal {
+  opacity: .3;
+  cursor: pointer;
+}
+
+#walkMiles, #walkToSov, #sovMilesTotal, #sovToGas, #sovToGhg, #gasTotal, #ghgTotal {
+  opacity: 1;
+}
+
+.dark {
+  opacity: 1;
 }
 
 
