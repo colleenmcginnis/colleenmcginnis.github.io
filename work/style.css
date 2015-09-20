@@ -8,20 +8,6 @@
 /* CSS Document */
 
 
-@media only screen and (min-device-width: 800px) {
-.grayscale {
-
-  /* for Webkit browsere, Chrome 19+, Safari 6+ ... */
-  -webkit-filter: grayscale(1);
-
-  /* this is for Firefox 3.5+, Firefox mobile */
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'gs\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#gs");
-
-  /* for IE6+ */
-  filter: gray;
-}
-}
-
 nav {
   height: 80px;
   padding: 25px;
@@ -51,8 +37,9 @@ nav a:hover {
 
 p {
   color: #000000;
-  font-size: 16px;
-  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-family: 'Lato';
+  font-weight: 300;
 }
 
 .col-md-4 p {
@@ -295,7 +282,7 @@ button:focus {
   box-shadow: inset 0px 0px 175px 19px rgba(0,0,0,0.8);
 }
 
-.p4p-web-version a:hover, .storywood-link a:hover {
+.p4p-web-version a:hover {
   -webkit-box-shadow: inset 0px 0px 175px 19px rgba(0,0,0,0.9);
   -moz-box-shadow: inset 0px 0px 175px 19px rgba(0,0,0,0.9);
   box-shadow: inset 0px 0px 175px 19px rgba(0,0,0,0.9);
@@ -357,10 +344,25 @@ video {
   max-width: 100%;
 }
 
+
+/*Storywood Interaction
+===========================================*/
+
 .storywoodCaption {
   background-color: #fff;
-  height: 40vh;
+  height: 380px;
   margin:-7% 5% 0 5%;
+}
+
+.storywoodCaption p {
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+
+.storywoodCaption .fa {
+  padding-right: 20px;
+  font-size: 16px;
 }
 
 .reuse h3 {
@@ -374,6 +376,11 @@ video {
 .commercial h3 {
   color: #EBBA34;
 }
+
+
+
+/*Brownfields Interaction
+===========================================*/
 
 #landUse {
   display: none;
@@ -454,3 +461,26 @@ video {
 }
 
 
+#amount {
+  font-family: 'Lato';
+  font-weight: 400;
+  color: #000;
+}
+
+
+/*Mobile Styles
+=======================================================*/
+
+@media only screen and (min-device-width: 800px) {
+  .grayscale {
+
+    /* for Webkit browsere, Chrome 19+, Safari 6+ ... */
+    -webkit-filter: grayscale(1);
+
+    /* this is for Firefox 3.5+, Firefox mobile */
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'gs\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#gs");
+
+    /* for IE6+ */
+    filter: gray;
+  }
+}
