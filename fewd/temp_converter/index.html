@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<title>Temperature Converter</title>
+		<!-- If you like, link to either reset.css or normalize.css here. -->
+		<link rel="stylesheet" href="css/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Sanchez:400,400italic' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+	
+	<section class="converter-container">
+		<h1>Temperature Converter</h1>	  
+	    <input type="text" id="temperature" placeholder="Enter temperature"/>
+	    <br>
+	    <br>
+	    <button id="fahrenheit_to_celsius" type="button">&deg;F to &deg;C</button>
+	    <button id="celsius_to_fahrenheit" type="button">&deg;C to &deg;F</button>
+		  
+		<p id="alert">Please enter a number!</p>
+		<p id="result"></p>
+
+	</section>
+	
+	<section class="thermometer">
+		
+		<svg height="400" width="200">
+	  		<defs>
+	  			<linearGradient id="MyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+		            <stop offset="25%"  stop-color="#af4149"/>
+		            <stop offset="75%" stop-color="#1b75bb"/>
+	        	</linearGradient>
+			</defs>
+  			
+  			<rect x="75" y="10" rx="20" ry="20" width="50" height="350" fill="#d4d4d4" />
+  			<circle cx="100" cy="350" r="40"  fill="#d4d4d4"/>
+
+  			<clipPath id="c1">
+				<rect id="mercuryClip" x="50" y="400" width="100" height="450" fill="none"/>
+			</clipPath>
+  			
+  			<rect id="mercury" x="75" y="10" rx="20" ry="20" width="50" height="350" fill="url(#MyGradient)" clip-path="url(#c1)" />
+  			<circle cx="100" cy="350" r="40"  fill="#1b75bb" clip-path="url(#c1)"/>
+		
+			<g id="labelsF">
+				<line x1="75" x2="90" y1="50" y2="50" stroke="white" stroke-width="3"></line>
+				<text x="35" y="55" font-family="'Lato'" fill="#d4d4d4">90&deg;F</text>
+				<line x1="75" x2="90" y1="100" y2="100" stroke="white" stroke-width="3"></line>
+				<text x="35" y="105" font-family="'Lato" fill="#d4d4d4">75&deg;F</text>
+	  			<line x1="75" x2="90" y1="150" y2="150" stroke="white" stroke-width="3"></line>
+	  			<text x="35" y="155" font-family="'Lato" fill="#d4d4d4">60&deg;F</text>
+				<line x1="75" x2="90" y1="200" y2="200" stroke="white" stroke-width="3"></line>
+				<text x="35" y="205" font-family="'Lato" fill="#d4d4d4">45&deg;F</text>
+	  			<line x1="75" x2="90" y1="250" y2="250" stroke="white" stroke-width="3"></line>
+	  			<text x="35" y="255" font-family="'Lato" fill="#d4d4d4">30&deg;F</text>
+	  			<line x1="75" x2="90" y1="300" y2="300" stroke="white" stroke-width="3"></line>
+	  			<text x="35" y="305" font-family="'Lato" fill="#d4d4d4">15&deg;F</text>
+	  		</g>
+
+			<g id="labelsC">
+				<line x1="110" x2="130" y1="63.73" y2="63.73" stroke="white" stroke-width="2"></line>
+				<text x="130" y="68.73" font-family="'Lato'" fill="#d4d4d4">30&deg;C</text>
+				<line x1="110" x2="130" y1="125.53" y2="125.53" stroke="white" stroke-width="2"></line>
+				<text x="130" y="130.53" font-family="'Lato'" fill="#d4d4d4">20&deg;C</text>
+				<line x1="110" x2="130" y1="187.333" y2="187.33" stroke="white" stroke-width="2"></line>
+				<text x="130" y="192.33" font-family="'Lato" fill="#d4d4d4">10&deg;C</text>
+	  			<line x1="110" x2="130" y1="249.13" y2="249.13" stroke="white" stroke-width="2"></line>
+	  			<text x="130" y="254.13" font-family="'Lato" fill="#d4d4d4">0&deg;C</text>
+	  			<line x1="110" x2="130" y1="310.93" y2="310.93" stroke="white" stroke-width="2"></line>
+	  			<text x="130" y="315.93" font-family="'Lato" fill="#d4d4d4">-10&deg;C</text>
+	  		</g>
+
+			<g id="tempMarkerC">
+				<line id="currentTempMarkC" x1="125" x2="135" y1="400" y2="400" stroke="black" stroke-width="3"></line> 
+				<text id="currentTempC" x="140" y="400" font-family="'Lato'" font-size="24px" font-weight="bold"></text>
+			</g>
+
+			<g id="tempMarkerF">
+				<line id="currentTempMarkF" x1="65" x2="75" y1="400" y2="400" stroke="black" stroke-width="3"></line> 
+				<text id="currentTempF" x="10" y="400" font-family="'Lato'" font-size="24px" font-weight="bold"></text>
+			</g>
+
+		</svg>
+	</section>
+
+		<script src="js/jquery-2.1.3.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
