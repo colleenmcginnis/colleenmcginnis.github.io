@@ -4,8 +4,6 @@
   content: "";
 }
 
-@charset "UTF-8";
-/* CSS Document */
 
 .container {
   width: 90%;
@@ -87,7 +85,7 @@ h3 {
 .page-header p {
   font-weight: 300;
   font-size: 15px;
-  color: #ccc;
+  color: #8a8a8a;
 }
 
 li {
@@ -572,6 +570,10 @@ video {
     width: 100%;
     margin: 0;
     padding: 0;
+  }
+
+  .page-header p {
+    font-size: 20px;
   }
 
 }
