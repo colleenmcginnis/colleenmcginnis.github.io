@@ -34,7 +34,8 @@
 <body>
   <nav class="container">
     <img src="../images/colleenmcginnis.png"alt="Colleen McGinnis">
-    <div style="float:right">
+    <img src="../images/colleenmcginnis.png" alt="Colleen McGinnis">
+    <div class="menu">
       <a href="index.html" class="active">WORK</a>
       <a href="../resume/index.html">ABOUT</a>
     </div>   
@@ -159,6 +160,13 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiY21jZyIsImEiOiJlZTA1Mjg5MThhNzAwYjIwMzkzOTRhZ
       $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
     });
     </script>
-
+  
+  <script src="../js/jquery-1.11.3.min.js" type="text/javascript"></script>
+  <script>
+    $('.hamburger').on('click', function(){
+      $('.menu').toggleClass('openMenu');
+      $('.work-page').toggleClass('shiftDown');
+    });
+  </script>
 </body>
 </html>

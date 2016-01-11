@@ -7,22 +7,32 @@
 @charset "UTF-8";
 /* CSS Document */
 
+.container {
+  width: 90%;
+}
 
 nav {
-  height: 80px;
+  height: 85px;
   padding: 25px;
 }
 
 nav img {
   float:none;
   padding:0;
-  width:25%
+  width:25%;
+}
+
+.menu {
+  display: inline;
+  float: right;
+  margin-top: 30px;
 }
 
 nav a {
   padding:0 15px 0 0;
   color: #8a8a8a;
   text-decoration: none;
+  font-family: 'Lato', sans-serif;
 }
 
 nav a:hover {
@@ -35,6 +45,12 @@ nav a:hover {
   font-weight:bold;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+
 p {
   color: #000000;
   font-size: 18px;
@@ -42,8 +58,15 @@ p {
   font-weight: 300;
 }
 
-.col-md-4 p {
-  padding-top:10px
+.project p {
+  padding-top:10px;
+}
+
+.project {
+  width: 32%;
+  margin: 0 1% 0 0;
+  padding: 0;
+  float: left;
 }
 
 h1 {
@@ -78,20 +101,10 @@ a:hover, a:visited, a:link, a:active {
   border-color: #777777;
 }
 
-.col-md-4 {
-  padding:1%;
+
+.work-page.row {
   margin: 0;
-}
-
-.work-page.row {
-  margin: 0 2% 0 2%;
   }
-
-@media (max-width:900px) {
-.work-page.row {
-  margin: 0 20% 0 20%;
-  }
-}
 
 .thumbnail {
   padding:0;
@@ -153,15 +166,15 @@ a.thumbnail:hover {
 }
 
 
-.controls{
+/*.controls{
   padding: 0% 2% 2% 0%;
   color: #ffffff;
 }
 
 .filter {
-  margin: 0% 1% 1% 0%
+  margin: 0% 1% 1% 0%;
 }
-
+*/
 label{
   font-weight: 300;
   margin: 0 0 0 0;
@@ -194,8 +207,6 @@ button:hover {
 button:active {
   color:#262626;
   border-color: #262626;
-  border
-
 }
 
 button:focus {
@@ -204,7 +215,7 @@ button:focus {
 
 .row img {
   padding-bottom:10px;
-  padding-top:10px
+  padding-top:10px;
 }
 
 .row p {
@@ -484,3 +495,78 @@ video {
     filter: gray;
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .project {
+    width: 49%;
+    margin: 0 1% 0 0;
+    padding: 0;
+  }
+
+  .menu {
+    margin-top: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+  
+  nav img {
+    width: 40%;
+  }
+
+  .hamburger {
+    display: inline;
+    float: right;
+  }
+
+  .menu {
+    height: 0;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition: height .3s linear;
+  }
+
+  .menu a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: background-color .2s linear;
+    padding: 8px;
+  }
+
+  .menu a:hover {
+    background-color: #eee;
+  }
+
+  .openMenu {
+    height: 80px;
+    transition: height .3s linear;
+  }
+
+  .shiftDown {
+    transform: translateY(60px);
+    transition: transform .3s linear;
+  }
+
+  .shiftUp {
+    transform: translateY(0px);
+    transition: transform .3s linear;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+
+  .project {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+
