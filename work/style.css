@@ -152,7 +152,7 @@ a:hover, a:visited, a:link, a:active {
 
 }
 
-.thumbnail img, {
+.thumbnail img {
   margin-left: 0;
   margin-right: 0;
   max-height:96%;
@@ -976,7 +976,7 @@ video {
     font-size: 40px;
   }
 
-  .project p {
+  .row .project p {
     font-size: 30px;
   }
 
