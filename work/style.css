@@ -1,7 +1,22 @@
+ /* Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
 .clearfix:after {
-  display: table;
-  clear: both;
-  content: "";
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
 }
 
 
@@ -444,13 +459,17 @@ video {
   display: none;
 }
 
+.sliderAnimation {
+  height: 450px;
+}
+
 #lvBaseMap {
-  width: 50%;
-  padding: 0;
+  width: 49%;
+  padding-left: 5%;
   margin: 0;
-  position: relative;
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 300px;
+  left: 1%;
 }
 
 #lvLandMap, #lvCommunityMap, #lvSitesMap {
@@ -458,79 +477,176 @@ video {
   padding-right: 5%;
   margin: 0;
   position: absolute;
-  top: 275px;
+  top: 300px;
   right: 0;
 }
 
 .landSlide {
-  animation: landSlide 20s ease-in-out 2s infinite;
+  -webkit-animation: landSlide 20s ease-in-out 2s infinite;
+          animation: landSlide 20s ease-in-out 2s infinite;
 }
 
 .communitySlide {
-  animation: communitySlide 20s ease-in-out 2s infinite;
+  -webkit-animation: communitySlide 20s ease-in-out 2s infinite;
+          animation: communitySlide 20s ease-in-out 2s infinite;
 }
 
 .siteSlide {
-  animation: siteSlide 20s ease-in-out 2s infinite;
+  -webkit-animation: siteSlide 20s ease-in-out 2s infinite;
+          animation: siteSlide 20s ease-in-out 2s infinite;
+}
+
+@-webkit-keyframes landSlide {
+  0% { 
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
+  }
+  10% { 
+    -webkit-transform: translateX(-91.5%); 
+            transform: translateX(-91.5%);
+  }
+  80% { 
+    -webkit-transform: translateX(-91.5%); 
+            transform: translateX(-91.5%);
+  }
+  90% { 
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 @keyframes landSlide {
   0% { 
-    transform: translateX(0);
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
   }
   10% { 
-    transform: translateX(-91.5%);
+    -webkit-transform: translateX(-91.5%); 
+            transform: translateX(-91.5%);
   }
   80% { 
-    transform: translateX(-91.5%);
+    -webkit-transform: translateX(-91.5%); 
+            transform: translateX(-91.5%);
   }
   90% { 
-    transform: translateX(0);
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
   }
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes communitySlide {
+  0% { 
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
+  }
+  10% { 
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
+  }
+  20% { 
+    -webkit-transform: translateX(-91.5%); 
+            transform: translateX(-91.5%);
+  }
+  70% { 
+    -webkit-transform: translateX(-91.5%); 
+            transform: translateX(-91.5%);
+  }
+  80% { 
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
 @keyframes communitySlide {
   0% { 
-    transform: translateX(0);
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
   }
   10% { 
-    transform: translateX(0);
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
   }
   20% { 
-    transform: translateX(-91.5%);
+    -webkit-transform: translateX(-91.5%); 
+            transform: translateX(-91.5%);
   }
   70% { 
-    transform: translateX(-91.5%);
+    -webkit-transform: translateX(-91.5%); 
+            transform: translateX(-91.5%);
   }
   80% { 
-    transform: translateX(0);
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
   }
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes siteSlide {
+  0% { 
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
+  }
+  20% { 
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
+  }
+  30% { 
+    -webkit-transform: translateX(-91.5%); 
+            transform: translateX(-91.5%);
+  }
+  60% { 
+    -webkit-transform: translateX(-91.5%); 
+            transform: translateX(-91.5%);
+  }
+  70% { 
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
 @keyframes siteSlide {
   0% { 
-    transform: translateX(0);
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
   }
   20% { 
-    transform: translateX(0);
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
   }
   30% { 
-    transform: translateX(-91.5%);
+    -webkit-transform: translateX(-91.5%); 
+            transform: translateX(-91.5%);
   }
   60% { 
-    transform: translateX(-91.5%);
+    -webkit-transform: translateX(-91.5%); 
+            transform: translateX(-91.5%);
   }
   70% { 
-    transform: translateX(0);
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
   }
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -688,6 +804,13 @@ video {
 
 }
 
+@media only screen and (max-width: 850px) {
+  .sliderAnimation {
+    height: 300px;
+  }
+}
+
+
 @media only screen and (max-width: 550px) {
   nav img {
     max-width: 100%;
@@ -705,5 +828,10 @@ video {
     margin: 0;
     padding: 0;
   }
+
+  .sliderAnimation {
+    height: 200px;
+  }
+
 }
 
