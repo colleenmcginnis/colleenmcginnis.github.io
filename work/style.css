@@ -518,15 +518,22 @@ video {
 }
 
 
-@media only screen and (max-device-width: 667px) {
+@media only screen and (max-device-width: 670px) {
   
+  nav {
+    height: 150px;
+  }
+
   nav img {
-    width: 40%;
+    width: 50%;
+    max-height:100px; 
   }
 
   .hamburger {
     display: inline;
     float: right;
+    font-size: 40px;
+    margin: 30px 1% 0 0;
   }
 
   .menu {
@@ -544,6 +551,7 @@ video {
     text-align: center;
     transition: background-color .2s linear;
     padding: 8px;
+    font-size: 40px;
   }
 
   .menu a:hover {
@@ -551,12 +559,12 @@ video {
   }
 
   .openMenu {
-    height: 80px;
+    height: 150px;
     transition: height .3s linear;
   }
 
   .shiftDown {
-    transform: translateY(60px);
+    transform: translateY(100px);
     transition: transform .3s linear;
   }
 
@@ -564,11 +572,6 @@ video {
     transform: translateY(0px);
     transition: transform .3s linear;
   }
-
-}
-
-@media only screen and (max-width: 500px) {
-
 
   .project {
     width: 100%;
@@ -578,6 +581,18 @@ video {
 
   .page-header p {
     font-size: 20px;
+  }
+
+  .project h5 {
+    font-size: 40px;
+  }
+
+  .project p {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 30px;
   }
 
 }
