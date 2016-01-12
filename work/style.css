@@ -92,9 +92,12 @@ li {
   font-family: 'Lato', sans-serif;
 }
 
+
 .grayscale:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
+  transition: filter 1s linear;
+  -webkit-transition: -webkit-filter .2s linear, filter .2s linear;
 }
 
 a:hover, a:visited, a:link, a:active {
@@ -514,7 +517,8 @@ video {
 
 }
 
-@media only screen and (max-width: 650px) {
+
+@media only screen and (max-width: 667px) {
   
   nav img {
     width: 40%;
