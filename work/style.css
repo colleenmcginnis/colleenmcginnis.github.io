@@ -10,14 +10,15 @@
 }
 
 nav {
-  height: 85px;
+  height: 90px;
   padding: 25px;
 }
 
 nav img {
   float:none;
   padding:0;
-  width:25%;
+  max-width: 40%;
+  max-height: 80px;
 }
 
 .menu {
@@ -597,4 +598,22 @@ video {
 
 }
 
+@media only screen and (max-width: 550px) {
+  nav img {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 15%;
+  }
+
+  .menu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
 
