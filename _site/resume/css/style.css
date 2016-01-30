@@ -1,0 +1,133 @@
+body {
+	font-family: 'Lato', sans-serif;
+	padding: 15px;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+h2 {
+	text-transform: uppercase;
+	margin: 50px 0px 0px 0px;
+}
+
+h3 {
+	margin: 2px 0px 0px 0px;
+	font-weight: normal;
+}
+
+h4 {
+	opacity: .5;
+	margin: 0px;
+}
+
+h5 {
+	margin: 5px 0px 0px 0px;
+	font-weight: normal;
+}
+
+.dates {
+	text-transform: uppercase;
+	color: #ccc;
+	margin-top: 50px;
+}
+
+a {
+	text-decoration: none;
+	color: #8a8a8a;
+}
+
+img {
+	float:left;
+	width:50%;
+	padding:0px 20px 20px 0px;
+}
+
+.skillz {
+	width: 96%;
+	padding: 0 2%;
+}
+
+.experience {
+	float: left;
+	width: 56%;
+	padding: 0 2%;
+}
+
+.education {
+	float: left;
+	width: 36%;
+	padding: 0 2%;
+
+}
+
+.contact {
+	width: 96%;
+	clear: both;
+	padding: 0 2%;
+	text-align: center;
+}
+
+#skills {
+	padding:20px 10% 20px 10%;
+	width: 75%;
+}
+
+nav {
+	padding: 0 2%;
+}
+
+nav img {
+	float:none;
+	padding:0;
+	width:25%;
+}
+
+.download {
+	float: right;
+	padding: 6px;
+	color: #eee;
+	transition: color .2s;
+	transition: border-color .2s;
+	border-style: solid;
+	border-color: #eee;
+	border-width: 2px;
+}
+
+.download:hover {
+	color:#8a8a8a;
+	border-style: solid;
+	border-color: #8a8a8a;
+	border-width: 2px;
+}
+
+.active {
+	color:#000;
+	font-weight:bold;
+}
+
+.fa {
+    color: #8a8a8a;
+    padding-right:5px;
+}
+
+.fa:hover {
+	color:#000;
+}
+
+.info-design {
+	color:#A39358;
+}
+
+.sust-design {
+	color:#A04A36;
+}
+
+.enviro-research {
+	color:#6D8051;
+}
+
+@media screen and (max-width: 800px) {
+	.experience, .education {
+		width: 96%;
+	}
+}

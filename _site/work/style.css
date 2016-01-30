@@ -22,6 +22,7 @@
 
 .container {
   width: 90%;
+  max-width: 1200px;
 }
 
 nav {
@@ -264,29 +265,6 @@ button:focus {
   padding-top: 10px;
 }
 
-.information-design {
-  color: rgb(163, 147, 88);
-  text-transform: uppercase;
-}
-
-.sustainable-design {
-  color: rgb(159, 73, 54);
-  text-transform: uppercase;
-}
-
-.environmental-research {
-  color: rgb(108, 128, 81);
-  text-transform: uppercase;
-}
-
-.fa {
-  color:#8a8a8a;
-}
-
-.fa:hover {
-  color:#000000;
-}
-
 .glyphicon {
   color:#000000;
 }
@@ -354,16 +332,40 @@ button:focus {
   filter: gray;
 }
 
+.services h3 {
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.services p {
+  margin-top: 0px;
+}
+
+.contact {
+  height: 100px;
+  background-color: #ccc;
+}
 
 footer {
   height:75px;
-  width:90%;
+  width:100%;
   text-align:right;
   font-size:20px;
 }
 
+footer a {
+  background-color: #ccc;
+  padding: 5px 3px;
+  transition: background-color .3s linear;
+}
+
 .fa {
-  margin-left:5px;
+  margin:0 5px;
+  color: #fff;
+}
+
+footer a:hover {
+  background-color: #8a8a8a;
 }
 
 #proxyMap, #cliftonMap, #cpsMap {
@@ -643,6 +645,9 @@ video {
 
 .sliderAnimation {
   height: 450px;
+  max-width: 1200px;
+  clear: both;
+  margin-bottom: 20px;
 }
 
 #lvBaseMap {
@@ -1013,6 +1018,10 @@ video {
 
   .sliderAnimation {
     height: 200px;
+  }
+
+  footer {
+    font-size:30px;
   }
 
 }
