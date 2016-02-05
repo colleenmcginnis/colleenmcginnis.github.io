@@ -226,7 +226,7 @@ label{
 button {
   text-align: center;
   background-color:#ffffff;
-  font-size: 15px;
+  font-size: 30px;
   color:#8a8a8a;
   font-family: 'Lato',sans-serif;
   margin: 0px;
@@ -242,18 +242,24 @@ button {
 }
 
 button:hover {
-  color:#000000;
-  border-color: #000000;
+  color:#404040;
+  border-color: #404040;
 
 }
 
 button:active {
-  color:#262626;
-  border-color: #262626;
+  color:#404040;
+  border-color: #404040;
 }
 
 button:focus {
   outline:0;
+}
+
+.contact-me {
+  margin: 30px auto;
+  text-align: center;
+  font-size: 30px;
 }
 
 .row img {
