@@ -102,7 +102,7 @@
 .twentytwenty-before-label {
   opacity: 0; }
   .twentytwenty-before-label:before {
-    content: "BEFORE"; 
+    content: "Before"; 
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
     font-size: 20px;
@@ -111,7 +111,7 @@
 .twentytwenty-after-label {
   opacity: 0; }
   .twentytwenty-after-label:before {
-    content: "AFTER";
+    content: "After";
     font-family: 'Lato', sans-serif;
     font-weight: lighter; 
     font-size: 20px;
