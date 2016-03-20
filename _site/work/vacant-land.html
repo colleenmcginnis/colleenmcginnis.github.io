@@ -86,7 +86,7 @@
 
 <div class="filters">
 	<p>By Community Area</p>
-	<select name="communityAreas" onchange="pickArea(event);" id="areas">
+	<select name="communityAreas" onchange="pickArea(event);" id="areas" data-position='41.868, -87.69' zoom="15">
 		<option value="ALL" selected>All Community Areas</option> 
 	</select>
 <!-- <p>By TIF</p>
@@ -130,21 +130,19 @@
 	});
 
 	function pickArea(event){
-	  var communityAreaSelected = event.target.value;
+		var communityAreaSelected = event.target.value;
 
-	  console.log(communityAreaSelected);
+		console.log(communityAreaSelected);
 
-	  vacantLots.setFilter(function(f) {
+		vacantLots.setFilter(function(f) {
 
-        return (communityAreaSelected === 'ALL') ? true : f.properties['community_area'] === communityAreaSelected;
-    	});
-    	
-    	return false;
-    
-        map.panTo(e.layer.getLatLng());
+	        return (communityAreaSelected === 'ALL') ? true : f.properties['community_area'] === communityAreaSelected;
+	    	});
+	    	
+	    	return false;
+	    
+		}
 
-
-	}
 
     	
 
@@ -244,6 +242,10 @@
 	   option += '<option value="'+ communityAreas[i] + '">' + communityAreas[i] + '</option>';
 	}
 	$('#areas').append(option);
+
+	$( "#areas" ).change(function() {
+        map.fitBounds(vacantLots.getBounds());
+    });
 	
 	vacantLots.on('ready', function() {
 		console.log(vacantLots.getGeoJSON());
