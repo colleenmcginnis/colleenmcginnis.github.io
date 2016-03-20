@@ -4,7 +4,8 @@ title: Public Interest Design Case Study
 subtitle: University of Texas School of Architecture, 2012
 category: sustainable design
 ---
-
+<script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
 
     <img src="images/proxy1.png" class="img-responsive" alt="proxy photo of mural">
 
@@ -78,12 +79,38 @@ category: sustainable design
 
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiY21jZyIsImEiOiJlZTA1Mjg5MThhNzAwYjIwMzkzOTRhZmI0YzdhM2ZhNyJ9.qmfiogrh1Wu7_JlfoaSMKw';
-    var proxyMap = L.mapbox.map('proxyMap', 'mapbox.streets', {
-        center: [37.776238, -122.424433],
-        zoom: 19
-    });
 
-    L.marker([37.776238, -122.424433]).bindLabel('proxy').addTo(proxyMap);
+var proxyMap = L.mapbox.map('proxyMap')
+  .setView([37.776238, -122.424433], 16);
+
+var basemap = L.mapbox.styleLayer('mapbox://styles/cmcg/cil1caul100969klzq28o6syi')
+  .addTo(proxyMap);
+
+L.mapbox.featureLayer({
+    // this feature is in the GeoJSON format: see geojson.org
+    // for the full specification
+    
+    type: 'Feature',
+    geometry: {
+        type: 'Point',
+        // coordinates here are in longitude, latitude order because
+        // x, y is the standard for GeoJSON and many formats
+        coordinates: [
+           -122.42415, 37.776238
+        ]
+    },
+    
+    properties: {
+        title: 'Proxy',
+        description: 'Hayes Valley, San Francisco, CA',
+        // one can customize markers by adding simplestyle properties
+        // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+        'marker-size': 'large', 
+        'marker-color': '#ecba37',
+        'marker-symbol': 'circle'
+    }
+
+}).addTo(proxyMap);
 
 </script>
  
