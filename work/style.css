@@ -122,12 +122,12 @@ li {
 }
 
 a {
-  color: #ccc;
+  color: #9b9b9b;
   transition: color .3s linear;
 }
 
 a:hover {
-  color: #8b8b8b;
+  color: #6b6b6b;
 }
 
 a:hover, a:visited, a:link, a:active {
@@ -188,6 +188,20 @@ a:hover, a:visited, a:link, a:active {
 a.thumbnail:hover {
   font-weight: 400;
   cursor: pointer;
+}
+
+.gif h5 {
+  padding-top: 0;
+  margin: 0;
+  color: #000000;
+  font-size: 1.25em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.gif p {
+    font-size: 15px;
+    color: #8b8b8b;
 }
 
 
@@ -484,6 +498,14 @@ video {
           animation-fill-mode: forwards;
 }
 
+.replayAnimation {
+  cursor: pointer;
+}
+
+.open .repeat {
+  animation-iteration-count: infinite;
+}
+
 @-webkit-keyframes openFirst {
   100% { 
     opacity:1; 
@@ -602,6 +624,10 @@ video {
   }
 }
 
+
+#luminVideo {
+  width: 100%;
+}
 
 
 /*Brownfields Interaction
