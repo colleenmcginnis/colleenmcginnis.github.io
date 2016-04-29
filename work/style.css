@@ -1027,6 +1027,10 @@ video {
     top: 400px;
   }
 
+  .aboutSkill, .aboutImage, .aboutText {
+    width: 100%;
+  }
+
 }
 
 @media only screen and (max-width: 850px) {
